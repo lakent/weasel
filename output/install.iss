@@ -15,28 +15,29 @@
 #define MyAppExeName "WeaselServer.exe"
 
 [Setup]
-; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
-; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={#MyAppName}
 AppName={#MyAppName}
-AppVersion={#WEASEL_VERSION}
-;AppVerName={#MyAppName} {#WEASEL_VERSION}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
+AppVersion={#WEASEL_VERSION}
+Compression=lzma
 DefaultDirName={autopf}\Rime\{#MyAppName}-{#WEASEL_VERSION}
 DefaultGroupName=小狼毫输入法
-UninstallDisplayName=小狼毫输入法
 DisableProgramGroupPage=yes
 LicenseFile=LICENSE.txt
-SetupIconFile=..\resource\{#MyAppName}.ico
-; Uncomment the following line to run in non administrative install mode (install for current user only.)
-;PrivilegesRequired=lowest
-OutputDir=archives
 OutputBaseFilename={#MyAppName}-{#WEASEL_VERSION}.{#WEASEL_BUILD}-installer-inno
-Compression=lzma
+OutputDir=archives
+SetupIconFile=..\resource\{#MyAppName}.ico
 SolidCompression=yes
+UninstallDisplayName=小狼毫输入法
+VersionInfoCompany="式恕堂"
+VersionInfoCopyright="Copyleft RIME Developers"
+VersionInfoDescription="小狼毫輸入法"
+VersionInfoProductName="小狼毫"
+VersionInfoProductVersion="{#WEASEL_VERSION}.{#WEASEL_BUILD}"
+VersionInfoVersion={#WEASEL_VERSION}
 WizardStyle=modern
 
 [Languages]
