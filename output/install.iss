@@ -58,10 +58,10 @@ Source: "weasel.dll"; DestDir: "{app}";
 Source: "weaselt.dll"; DestDir: "{app}";
 Source: "weasel.ime"; DestDir: "{app}";
 Source: "weaselt.ime"; DestDir: "{app}";
-Source: "weaselx64.dll"; DestDir: "{app}"; Flags: 64bit
-Source: "weaseltx64.dll"; DestDir: "{app}"; Flags: 64bit
-Source: "weaselx64.ime"; DestDir: "{app}"; Flags: 64bit
-Source: "weaseltx64.ime"; DestDir: "{app}"; Flags: 64bit
+Source: "weaselx64.dll"; DestDir: "{app}"; Check: IsWin64
+Source: "weaseltx64.dll"; DestDir: "{app}"; Check: IsWin64
+Source: "weaselx64.ime"; DestDir: "{app}"; Check: IsWin64
+Source: "weaseltx64.ime"; DestDir: "{app}"; Check: IsWin64
 Source: "WeaselDeployer.exe"; DestDir: "{app}";
 Source: "WeaselServer.exe"; DestDir: "{app}";
 Source: "WeaselSetup.exe"; DestDir: "{app}";
